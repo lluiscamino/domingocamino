@@ -42,7 +42,7 @@ export function indexPage({ lang, config, translations, basePath = '.' }) {
                     <span class="stat-label">${stats.labels.followers[lang]}</span>
                 </div>`;
 
-  return `${head({ title: 'Domingo Camino | Photography', lang, basePath, description: t['meta.description.home'] })}
+  return `${head({ title: 'Domingo Camino | Photography', lang, basePath, description: t['meta.description.home'], siteUrl: config.site.url })}
 <body>
     <!-- Loading State -->
     <div class="page-loader" id="pageLoader">
